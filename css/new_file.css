@@ -1,9 +1,10 @@
 .screen{
 	margin: 150px auto 30px;   
 	overflow: hidden;
-	background-color: #368590;
+	background-color: rgb(189, 236, 230);
 	border-radius: 5px;
 	width: 300px;
+	border: 2px dashed rgb(236, 127, 164);
 }
 
 #screenName{
@@ -16,23 +17,39 @@
 }
 
 .all_button{
+	
 	margin: 10px auto;
 	width: 300px;
-	border: 2px dashed #368590;
+	border: 2px dashed rgb(189, 236, 230);
+	background-color: rgba(238, 192, 206, 0.986);
+	
 }
 
-button{
+/* button{F
 	width: 60px;
 	height: 30px;
 	margin: 5px;
 	background-color: #368590;
-}
+} */
 
 .button{
-	width: 60px;
-	height: 30px;
+	width: 70px;
+	height: 40px;
+	margin: 2px;
+	border-radius: 5px;
+	font-family: Arial, Helvetica, sans-serif;
+	color: rgb(201, 96, 139);
+    border: 2px dashed #e9e9e9;
+	background-color: rgb(189, 236, 230);
+	
+}
+
+.button:active{
 	margin: 5px;
-	background-color: #368590;
+	width: 70px;
+	height: 40px;
+	border-radius: 5px;
+	background-color:rgba(238, 192, 206, 0.986);
 }
 
 p{

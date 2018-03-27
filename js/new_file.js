@@ -1,5 +1,26 @@
 var num=0;
 
+
+// var bt=document.getElementsByClassName("button");
+
+//  var i;
+//  for (i = 0; i < bt.length; i++) {
+// 	console.log(i);
+//  bt[i].onmousedown=function(e){
+// 	e = e || window.event;
+// 	console.log("down");
+// 	var cs = getComputedStyle(this, null);
+// 	cs.getPropertyValue('background-color')="red";
+// }
+// }
+var pt=document.getElementById("screenName");
+
+pt.onkeydown=function(e){
+	var keyCode = e.keyCode;
+	document.getElementById("screenName").value="";   
+	return false;
+}
+
 function putin(num){
 	document.getElementById("screenName").value+=num;
 	var numdel=document.getElementById("screenName").value;
