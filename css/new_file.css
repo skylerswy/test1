@@ -120,3 +120,16 @@ img:last-child{
 	border-left: #f7d7d7 2px dashed;
 	width: 53px;
 }
+
+
+.time{
+	width: 300px;
+	height: 100px;
+	margin: 100px auto -200px;
+}
+
+#button-del{
+	visibility:hidden;
+	/* 隐藏且仍然占位置 */
+}
+

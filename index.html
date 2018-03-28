@@ -12,6 +12,10 @@
             user-scalable=yes：表示用户是否可以调整缩放比例 -->
     </head>
 	<body>
+        <div class="time">
+            <input type="button"  onClick="timedCount()"  value="开始计时！" >
+            <input type="text" id="time-text">
+        </div>
 		<div class="screen">
 			<center>
         <input type="text" id="screenName" name="screenName" >
@@ -37,26 +41,25 @@
                         <p  class="sign-button">*</p>
                         <p  class="sign-button">/</p>
                  </div>
-            <div class="1_row">
+            <div class="row1">
                 <input type="button"  onclick="putin(this.value)" value="1" class="button">
                 <input type="button"  onclick="putin(this.value)" value="2" class="button">
                 <input type="button"  onclick="putin(this.value)" value="3" class="button">
             </div>
-            <div class="2_row">
+            <div class="row2">
                 <input type="button"  onclick="putin(this.value)" value="4" class="button">
                 <input type="button"  onclick="putin(this.value)" value="5" class="button">
                 <input type="button"  onclick="putin(this.value)" value="6" class="button">
             </div>
-            <div class="3_row">
+            <div class="row3">
                 <input type="button"  onclick="putin(this.value)" value="7" class="button">
                 <input type="button"  onclick="putin(this.value)" value="8" class="button">
                 <input type="button"  onclick="putin(this.value)" value="9" class="button">
             </div>
-            <div class="4_row">
-              
-            	<input type="button"  onclick="delit()" value="删除" class="button">
+            <div class="row4">
+            	<input type="button"  onclick="delit()" value="删除" class="button" id="button-del">
                 <input type="button"  onclick="putin(this.value)" value="0" class="button">
-                <input type="button"  onclick="confirm()" value="确认" class="button">
+                <input type="button"  onclick="confirm()" value="确认" class="button"></div>
             </div></center>
         </div>
 

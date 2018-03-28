@@ -69,3 +69,20 @@ function confirm(){
  	}
  	
  }
+
+var c=0;
+var t;
+function timedCount()
+{
+	if(c<=10){
+	document.getElementById('time-text').value=c;
+    console.log(c);
+	c=c+1;
+	t=setTimeout("timedCount()",1000);	
+	}else{
+		clearTimeout(t);
+		alert("时间到")
+	}
+}
+
+
