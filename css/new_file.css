@@ -127,9 +127,12 @@ img:last-child{
 	height: 100px;
 	margin: 100px auto -200px;
 }
-
+/* 
 #button-del{
 	visibility:hidden;
-	/* 隐藏且仍然占位置 */
+	隐藏且仍然占位置 
+} 
+*/
+#button-last{
+	width: 150px;
 }
-

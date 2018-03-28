@@ -72,17 +72,48 @@ function confirm(){
 
 var c=0;
 var t;
-function timedCount()
-{
-	if(c<=10){
+// function timedCount()
+// {
+// 	if(c<=10){
+// 	document.getElementById('time-text').value=c;
+//  console.log(c);
+// 	c=c+1;
+// 	t=setTimeout("timedCount()",1000);	
+// 	}else{
+// 		clearTimeout(t);
+// 		alert("时间到")
+// 	}
+// }
+// setinterval替代 settimeout   
+//setTimeout(表达式,延时时间)在执行时,是在载入后延迟指定时间后,去执行一次表达式
+//而setInterval(表达式,交互时间)则不一样,它从载入后,每隔指定的时间就执行一次表达式 
+function Count(){
+	if(c<10){
+	c=c+1;	
 	document.getElementById('time-text').value=c;
-    console.log(c);
-	c=c+1;
-	t=setTimeout("timedCount()",1000);	
-	}else{
-		clearTimeout(t);
-		alert("时间到")
-	}
+	console.log(c);
+}else{
+	c=0;
+	document.getElementById('time-text').value=c;
+	clearInterval(t);
+	alert("时间到")
+}
+}
+
+function timedCount(){
+	t=setInterval("Count()",1000);
+	// function Count(){
+	// 	if(c<=10){
+	// 	document.getElementById('time-text').value=c;
+	// 	c=c+1;
+	// 	console.log(c);
+	// }else{
+	// 	//c=0;
+	// 	//document.getElementById('time-text').value=c;
+	// 	clearInterval(t);
+	// 	alert("时间到")
+	// }
+	// }
 }
 
 
