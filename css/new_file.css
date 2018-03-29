@@ -1,4 +1,4 @@
-.screen{
+.screen {
 	margin: 150px auto 30px;   
 	overflow: hidden;
 	background-color: rgb(189, 236, 230);
@@ -7,7 +7,7 @@
 	border: 2px dashed rgb(236, 127, 164);
 }
 
-#screenName{
+#screenName {
 	position: relative;
 	text-align: center;
 	border-radius: 5px;
@@ -18,7 +18,7 @@
 	/* 去除input边框 */
 }
 
-.all_button{
+.all_button {
 	
 	margin: 10px auto;
 	width: 300px;
@@ -27,7 +27,7 @@
 	
 }
 
-.sign{
+.sign {
 	width: 50px;
 	height: 168px;
 	float: left;
@@ -42,13 +42,13 @@
 }
 
 /* 隐藏混动条 */
-.sign::-webkit-scrollbar{
-	display:none;
+.sign::-webkit-scrollbar {
+	display: none;
   }
 
-.sign-button{
+.sign-button {
 	display: block;
-	width:45px;
+	width: 45px;
 	height: 35px;
 	margin: 2px 1px;
 	padding-top: 11px;
@@ -57,11 +57,11 @@
 	border: rgb(189, 236, 230) 2px dashed;
 }
 
-.sign-button:hover{
+.sign-button:hover {
 	background-color: rgba(238, 192, 206, 0.986);
 }
 
-.button{
+.button {
 	width: 70px;
 	height: 40px;
 	margin: 2px;
@@ -73,27 +73,27 @@
 	
 }
 
-.button:active{
+.button:active {
 	margin: 5px;
 	width: 70px;
 	height: 40px;
 	border-radius: 5px;
-	background-color:rgba(238, 192, 206, 0.986);
+	background-color: rgba(238, 192, 206, 0.986);
 }
 
-p{
+p {
 	font-size: 20px;
 	
 }
 
-.picture{
-	width:300px;
+.picture {
+	width: 300px;
 	height: 50px;
 	margin: -10px 0px;
 	border: #f7d7d7 solid 2px;
 }
 
-img{
+img {
 	float: left;
 	height: 50px;
 	width: 49px;
@@ -106,23 +106,23 @@ img{
 
 
 
-img:hover{
+img:hover {
 	/* background-color: rgb(221, 241, 239); */
-	-webkit-transform:rotate(10deg);/* Safari 和 Chrome */
-	-moz-transform:rotate(10deg);/* Firefox */
-	-o-transform:rotate(10deg);/* Opera */
-	-ms-transform:rotate(10deg);/* IE 9 */
-	transform:rotate(10deg);/* rotate旋转属性 */
+	-webkit-transform: rotate(10deg);/* Safari 和 Chrome */
+	-moz-transform: rotate(10deg);/* Firefox */
+	-o-transform: rotate(10deg);/* Opera */
+	-ms-transform: rotate(10deg);/* IE 9 */
+	transform: rotate(10deg);/* rotate旋转属性 */
    /*css3*/
 }
 
-img:last-child{
+img:last-child {
 	border-left: #f7d7d7 2px dashed;
 	width: 53px;
 }
 
 
-.time{
+.time {
 	width: 300px;
 	height: 100px;
 	margin: 100px auto -200px;
@@ -133,6 +133,23 @@ img:last-child{
 	隐藏且仍然占位置 
 } 
 */
-#button-last{
+#button-last {
 	width: 150px;
 }
+
+/*
+ 规范：
+ [强制] 选择器 与 { 之间必须包含空格。
+ [强制] 属性名 与之后的 : 之间不允许包含空格， : 与 属性值 之间必须包含空格。
+ [强制] 列表型属性值 书写在单行时，, 后必须跟一个空格。font-family: Arial, sans-serif;
+ [强制] 当一个 rule 包含多个 selector 时，每个选择器声明必须独占一行。
+
+.post,
+.page,
+.comment {
+    line-height: 1.5;
+}
+
+
+
+  */

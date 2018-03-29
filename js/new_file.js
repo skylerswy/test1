@@ -13,13 +13,17 @@ var num=0;
 // 	cs.getPropertyValue('background-color')="red";
 // }
 // }
-var pt=document.getElementById("screenName");
 
-pt.onkeydown=function(e){
-	var keyCode = e.keyCode;
-	document.getElementById("screenName").value="";   
-	return false;
-}
+
+//pt.onkeydown=function(e){
+// 	var keyCode = e.keyCode;
+// 	document.getElementById("screenName").value="";   
+// 	return false;
+// }
+
+
+//var pt=document.getElementById("screenName");
+var pt=$("screenName");
 
 function putin(num){
 	document.getElementById("screenName").value+=num;
@@ -86,7 +90,8 @@ var t;
 // }
 // setinterval替代 settimeout   
 //setTimeout(表达式,延时时间)在执行时,是在载入后延迟指定时间后,去执行一次表达式
-//而setInterval(表达式,交互时间)则不一样,它从载入后,每隔指定的时间就执行一次表达式 
+//而setInterval(表达式,交互时间)则不一样,它从载入后,每隔指定的时间就执行一次表达式
+
 function Count(){
 	if(c<10){
 	c=c+1;	

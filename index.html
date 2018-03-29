@@ -10,6 +10,7 @@
             minimum-scale=0.5：表示最小的缩放比例
             maximum-scale=2.0：表示最大的缩放比例 
             user-scalable=yes：表示用户是否可以调整缩放比例 -->
+        <script src="jquery-3.3.1.min.js"></script>
     </head>
 	<body>
         <div class="time">
@@ -18,7 +19,7 @@
         </div>
 		<div class="screen">
 			<center>
-        <input type="text" id="screenName" name="screenName" >
+        <input type="text" id="screenName" name="screenName" disabled>
         <!-- style="ime-mode:disabled" -->
 		</center>
         </div>
@@ -71,7 +72,7 @@
     	输入完成后按确认，若判断与上一个数连贯，则可以继续输入。若不连贯，则重新从1开始。
     </p>
     </center>
-    <script type="text/javascript" src="js/new_file.js">
+    <script src="js/new_file.js">
     </script>
 	</body>
 </html>
