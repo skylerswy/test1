@@ -1,36 +1,37 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-CN">
 	<head>
         <meta charset="UTF-8">
 		<title>skylerswy</title>
 		<link rel="stylesheet" href="css/new_file.css" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
         <!-- width=device-width ：表示宽度是设备屏幕的宽度 
-            initial-scale=1.0：表示初始的缩放比例
-            minimum-scale=0.5：表示最小的缩放比例
-            maximum-scale=2.0：表示最大的缩放比例 
-            user-scalable=yes：表示用户是否可以调整缩放比例 -->
+             initial-scale=1.0：表示初始的缩放比例
+             minimum-scale=0.5：表示最小的缩放比例
+             maximum-scale=2.0：表示最大的缩放比例 
+             user-scalable=yes：表示用户是否可以调整缩放比例 -->
         <script src="jquery-3.3.1.min.js"></script>
     </head>
 	<body>
         <div class="time">
             <input type="button" value="开始计时！"   onclick="timedCount()"  >
             <input type="text" id="time-text">
+            <!-- id 建议单词全字母小写，单词间以 - 分隔。同项目必须保持风格一致。 -->
         </div>
 		<div class="screen">
 			<center>
-        <input type="text" id="screenName" name="screenName" disabled>
+        <input type="text" id="screenname" name="screenname" disabled>
         <!-- style="ime-mode:disabled" -->
 		</center>
         </div>
         <center>
             <div class="picture">
-                <img src="img/01.png">
-                <img src="img/03.png">
-                <img src="img/04.png">
-                <img src="img/05.png">
-                <img src="img/06.png">
-                <img src="img/07.png">
+                <img src="img/01.png" alt="01">
+                <img src="img/03.png" alt="02">
+                <img src="img/04.png" alt="03">
+                <img src="img/05.png" alt="04">
+                <img src="img/06.png" alt="05">
+                <img src="img/07.png" alt="06">
             </div>
         </center>
 		 <div class="all_button">
@@ -63,7 +64,6 @@
                 <input type="button"  onclick="confirm()" value="确认" class="button" id="button-last"></div>
             </center>
         </div>
-
     <center>
     <p>
     	第一位初始为0，请从1开始输入。

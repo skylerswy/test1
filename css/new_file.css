@@ -1,10 +1,10 @@
 .screen {
 	margin: 150px auto 30px;   
 	overflow: hidden;
-	background-color: rgb(189, 236, 230);
+	background-color: #BDECE6;
 	border-radius: 5px;
 	width: 300px;
-	border: 2px dashed rgb(236, 127, 164);
+	border: 2px dashed #EC7FA4;
 }
 
 #screenName {
@@ -14,7 +14,7 @@
 	width: 200px;
 	height: 30px;
 	margin: 10px;
-	border: 0px;
+	border: 0;
 	/* 去除input边框 */
 }
 
@@ -22,8 +22,8 @@
 	
 	margin: 10px auto;
 	width: 300px;
-	border: 2px dashed rgb(189, 236, 230);
-	background-color: rgba(238, 192, 206, 0.986);
+	border: 2px dashed #BDECE6;
+	background-color: #EEC0CEDC;
 	
 }
 
@@ -31,20 +31,20 @@
 	width: 50px;
 	height: 168px;
 	float: left;
-	background-color: rgb(189, 236, 230);
+	background-color: #BDECE6;
 	border-radius: 5px;
 	margin: 2px -5px 5px 5px;
 	border: 2px dashed #e9e9e9;
 	overflow-x: hidden;
 	overflow-y: scroll;
-	color: rgb(201, 96, 139);
+	color: #C9608B;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 /* 隐藏混动条 */
 .sign::-webkit-scrollbar {
 	display: none;
-  }
+}
 
 .sign-button {
 	display: block;
@@ -52,13 +52,13 @@
 	height: 35px;
 	margin: 2px 1px;
 	padding-top: 11px;
-	background-color: rgb(189, 236, 230);
+	background-color: #BDECE6;
 	border-radius: 5px;
-	border: rgb(189, 236, 230) 2px dashed;
+	border: #BDECE6 2px dashed;
 }
 
 .sign-button:hover {
-	background-color: rgba(238, 192, 206, 0.986);
+	background-color: #EEC0CEDC;
 }
 
 .button {
@@ -67,9 +67,9 @@
 	margin: 2px;
 	border-radius: 5px;
 	font-family: Arial, Helvetica, sans-serif;
-	color: rgb(201, 96, 139);
+	color: #C9608B;
     border: 2px dashed #e9e9e9;
-	background-color: rgb(189, 236, 230);
+	background-color: #BDECE6;
 	
 }
 
@@ -78,7 +78,7 @@
 	width: 70px;
 	height: 40px;
 	border-radius: 5px;
-	background-color: rgba(238, 192, 206, 0.986);
+	background-color: #EEC0CEDC;
 }
 
 p {
@@ -89,7 +89,7 @@ p {
 .picture {
 	width: 300px;
 	height: 50px;
-	margin: -10px 0px;
+	margin: -10px 0;
 	border: #f7d7d7 solid 2px;
 }
 
@@ -98,10 +98,10 @@ img {
 	height: 50px;
 	width: 49px;
 	-webkit-transition: all 0.2s ease-in;
-          -moz-transition: all 0.2s ease-in;
-          -o-transition: all 0.2s ease-in;
-          -ms-transition: all 0.2s ease-in;
-          transition: all 0.2s ease-in;
+       -moz-transition: all 0.2s ease-in;
+         -o-transition: all 0.2s ease-in;
+        -ms-transition: all 0.2s ease-in;
+            transition: all 0.2s ease-in;
 }
 
 
@@ -109,10 +109,10 @@ img {
 img:hover {
 	/* background-color: rgb(221, 241, 239); */
 	-webkit-transform: rotate(10deg);/* Safari 和 Chrome */
-	-moz-transform: rotate(10deg);/* Firefox */
-	-o-transform: rotate(10deg);/* Opera */
-	-ms-transform: rotate(10deg);/* IE 9 */
-	transform: rotate(10deg);/* rotate旋转属性 */
+	   -moz-transform: rotate(10deg);/* Firefox */
+	     -o-transform: rotate(10deg);/* Opera */
+	    -ms-transform: rotate(10deg);/* IE 9 */
+	        transform: rotate(10deg);/* rotate旋转属性 */
    /*css3*/
 }
 
