@@ -1,3 +1,4 @@
+
 var num = 0;
 
 
@@ -23,11 +24,17 @@ var num = 0;
 
 
 //var pt=document.getElementById("screenName");
-var pt = $("screenname");
+var pt = $("#screenname");
+
+$(document).ready(function(){
+	
+});
 
 function putin(num) {
+	//$("#screenname").val(num);
 	document.getElementById("screenname").value += num;
-	var numdel = document.getElementById("screenname").value;
+	var numdel = $("#screenname").val();
+	//var numdel = document.getElementById("screenname").value;
 	console.log(numdel);
 	window.data = numdel;
 	return data;	
@@ -40,13 +47,13 @@ function delit() {
 	console.log(numdeling);
 	var newnum = Math.floor(numdeling/10);
 	if (newnum == 0){
-		document.getElementById("screenname").value = "";
+		$("#screenname").val() = "";
 		window.data = 0;
 	}
 	else {
 	    console.log(newnum);
-	    document.getElementById("screenname").value = "";
-	    document.getElementById("screenname").value = newnum;
+	    $("#screenname").val() = "";
+	    $("#screenname").val() = newnum;
 	    window.data = newnum;
 	}
 	return data;
@@ -54,26 +61,21 @@ function delit() {
 
 tmpe = 0;
 
-
-
 function confirm() {
-	/*var tmpe=data;*/
 	var res = data - tmpe;
 	tmpe = data;
-	
 	console.log(res);
 	if (res != 1){
- 		alert("不连续，请重新开始");
- 		document.getElementById("screenname").value = "";
+		 alert("不连续，请重新开始");
+		 $("#screenname").val(" ");
+ 		//document.getElementById("screenname").value = "";
  		tmpe = 0;
- 		// document.getElementById("screennote").value=tmpe;
 	 }
 	 else {
- 		console.log("连续可继续");
- 		document.getElementById("screenname").value = "";
- 		// document.getElementById("screennote").value=tmpe;
+		 console.log("连续可继续");
+		 $("#screenname").val(" ");
+ 		//document.getElementById("screenname").value = "";
  	}
- 	
  }
 
 var c = 0;
@@ -96,13 +98,15 @@ var t;
 
 function Count() {
 	if (c<10){
-	c = c+1;	
-	document.getElementById('time-text').value = c;
+	c = c+1;
+	$("#time-text").val(c);
+	//document.getElementById('time-text').value = c;
 	console.log(c);
 }
 else {
 	c=0;
-	document.getElementById('time-text').value = c;
+	$("#time-text").val(c);
+	//document.getElementById('time-text').value = c;
 	clearInterval(t);
 	alert("时间到")
 }
