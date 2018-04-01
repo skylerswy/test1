@@ -24,16 +24,31 @@ var num = 0;
 
 
 //var pt=document.getElementById("screenName");
-var pt = $("#screenname");
+var pt = $("#screen_name");
 
 $(document).ready(function(){
 	
 });
 
+//$(".row > button").addEventListener("click", putin(this.value));
+var button_team = document.getElementsByClassName("button");
+for(i=0;i<button_team.length-1;i++){
+	//console.log(button_team[i]);
+	button_team[i].addEventListener("click",aputin);
+}
+
+document.getElementById("button-last").addEventListener("click",confirm);
+
+function aputin(){
+	return putin(this.value);
+}
+
 function putin(num) {
-	//$("#screenname").val(num);
-	document.getElementById("screenname").value += num;
-	var numdel = $("#screenname").val();
+	var $screen_name = $("#screen_name");
+	$("#screen_name").val($screen_name.val()+num);
+	//$("#screen_name").val(num);
+	//document.getElementById("screenname").value += num;
+	var numdel = $("#screen_name").val();
 	//var numdel = document.getElementById("screenname").value;
 	console.log(numdel);
 	window.data = numdel;
@@ -47,13 +62,13 @@ function delit() {
 	console.log(numdeling);
 	var newnum = Math.floor(numdeling/10);
 	if (newnum == 0){
-		$("#screenname").val() = "";
+		$("#screen_name").val() = "";
 		window.data = 0;
 	}
 	else {
 	    console.log(newnum);
-	    $("#screenname").val() = "";
-	    $("#screenname").val() = newnum;
+	    $("#screen_name").val() = "";
+	    $("#screen_name").val() = newnum;
 	    window.data = newnum;
 	}
 	return data;
@@ -67,13 +82,13 @@ function confirm() {
 	console.log(res);
 	if (res != 1){
 		 alert("不连续，请重新开始");
-		 $("#screenname").val(" ");
+		 $("#screen_name").val(" ");
  		//document.getElementById("screenname").value = "";
  		tmpe = 0;
 	 }
 	 else {
 		 console.log("连续可继续");
-		 $("#screenname").val(" ");
+		 $("#screen_name").val(" ");
  		//document.getElementById("screenname").value = "";
  	}
  }
